@@ -12,16 +12,21 @@ body {
     margin: auto;
     font-family: "Inria Sans", serif;
     font-size: x-large;
-    font-weight: bold;
+    height: auto;
 }
 
 /* start navbar style */
 nav {
     background-color: #F0F0F0;
-    padding-bottom: 20px;
+    padding-bottom: 32px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 .nav-container {
-    width: 90%;
+    width: 85%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -29,9 +34,12 @@ nav {
     background-color: #F0F0F0;
 }
 
-a.active {
-    text-decoration: underline #DA70D6;
+.active {
     color: #DA70D6;
+}
+
+.active:hover {
+    text-decoration: underline;
 }
 
 nav .logo img {
@@ -45,8 +53,8 @@ nav .logo h1 {
 nav .nav-li {
     margin: auto;
     justify-content: center;
-    /* background-color: #70da9a; */
 }
+
 nav .nav-li ul{
     display: flex;
     align-items: center;
@@ -59,13 +67,15 @@ nav .nav-li ul li{
 }
 
 nav .nav-li ul li a.active{
-    text-decoration: solid 1px;
+    /* text-decoration: solid 1px; */
     color: #DA70D6;
 }
 
 nav .nav-li ul li a{
     text-decoration: none;
     color: black;
+    font-weight: bold;
+
 }
   
   /* The container <div> - needed to position the dropdown content */
@@ -141,11 +151,460 @@ nav .nav-li ul li a{
 
 .btnLogSign button a{
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: bold;
 }
 
 /* finish navbar style */
+
+
+/* start banner style */
+
+.banner-container {
+    width: 100%;
+    height: 100vh;
+    background-color: #FDFDFD;
+    margin-top: 190px;
+}
+
+.banner-container .banner {
+    width: 85%;
+    margin-left: 8%;
+    display: flex;
+    align-items: center;
+    /* background-color: #DA70D6;    */
+}
+
+.banner-container .banner .text h1 {
+    color: #DA70D6;
+    font-size: 68px;
+    width: 70%;
+}
+
+.banner-container .banner .text p {
+    width: 99%;
+    font-size: 16px;
+}
+
+.banner-container .banner .text h4 {
+    margin-top: 8px;
+    font-size: 36px;
+}
+
+.banner-container .banner .text button {
+    margin-top: 24px;
+    background-color: black;
+    padding: 20px;
+    border: solid;
+    border-radius: 8px;
+}
+
+.banner-container .banner .text button:hover {
+    background: none;
+}
+
+.banner-container .banner .text button a {
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+.banner-container .banner .text button a:hover {
+    color: #000;
+    font-weight: bold;
+}
+
+.banner-container .banner img {
+    width: 650px;
+    height: 550px;
+    margin-top: 5%;
+}
+
+/* finish banner style */
+
+
+/* start show products style */
+
+.show-product-container {
+    background-color: #F0F0F0;
+    height: 100vh;
+}
+
+.product-container {
+    background-color: #F0F0F0;
+    width: 85%;
+    margin: auto;
+}
+
+.product-container button.our-products {
+    margin-top: 100px;
+    margin-left: 30%;
+    width: 40%;
+    padding: 20px;
+    border: solid #DA70D6;
+    border-radius: 14px;
+    background: #DA70D6;
+    font-size: 48px;
+    font-weight: bolder;
+    color: white;
+}
+
+.product-container button.our-products:hover {
+    background: none;
+    color: #DA70D6;
+}
+
+.products-name-show {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.products-name-show h4 a{
+    text-decoration: underline;
+    color: black;
+}
+
+.products-name-show h4 a:hover{
+    color: #DA70D6;
+    text-decoration: none;
+}
+
+.products-images-show {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.products-images-show img {
+    width: 240px;
+    height: 240px;
+    border-radius: 100%;
+}
+
+/* finish show products style */
+
+
+/* start trending products style and new arrivals product style */
+
+.trending-products-container button.trending-products, .new-products-container button.new-products {
+    margin-top: 100px;
+    margin-left: 30%;
+    width: 40%;
+    padding: 20px;
+    border: solid #DA70D6;
+    border-radius: 14px;
+    background: #DA70D6;
+    font-size: 48px;
+    font-weight: bolder;
+    color: white;
+}
+
+.trending-products-container button.trending-products:hover, .new-products-container button.new-products:hover {
+    background: none;
+    color: #DA70D6;
+}
+
+.cards-container {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cards-container .card {
+    height: auto;
+
+    margin-top: 50px;
+}
+
+.cards-container .card .images-heart {
+    position: relative; /* Make this container a positioning context */
+}
+
+.cards-container .card .images-heart  {
+    width: 250px;
+    height: 320px;
+    position: relative; /* Position for the image and icon together */
+}
+
+.cards-container .card .images-heart img {
+    width: 250px;
+    height: 320px;
+    border-radius: 20px;
+}
+
+.cards-container .card .images-heart .fa-heart {
+    position: absolute; /* Position the heart icon on top of the image */
+    top: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    /* color: red; Customize the icon color */
+    font-size: 24px; /* Customize the size of the heart icon */
+    z-index: 2; /* Ensure the icon is above the image */
+    cursor: pointer;
+}
+
+.cards-container .card .product-name-trending, .cards-container .card .product-name-new{
+    width: 250px;
+    font-size: 20px;
+}
+
+.cards-container .card .add-to-cart {
+    border: solid black;
+    background: black;
+    padding: 8px;
+    color: white;
+}
+
+.trending-products-container .see-more, .new-products-container .see-more {
+    margin-left: 110px;
+    margin-top: 20px;
+}
+
+.trending-products-container .see-more .sign-see-more, .new-products-container .see-more .sign-see-more {
+    padding: 8px;
+    width: 10%;
+    border: solid #F0F0F0;
+    border-radius: 20px;
+}
+
+.trending-products-container .see-more .sign-see-more:hover,  .new-products-container .see-more .sign-see-more:hover{
+    background: none;
+    border: solid;
+}
+
+.trending-products-container .see-more .sign-see-more .fa-arrow-right, .new-products-container .see-more .sign-see-more .fa-arrow-right{
+    font-size: 24px;
+    color: #000;
+}
+
+
+/* finish trending products style and new arrivals product style */ 
+
+
+/* start second banner style */
+
+.second-banner-container {
+    display: flex;
+    align-items: center;  
+    width: 85%;
+    height: 250vh;
+    margin: auto;
+    /* margin-top: 100px; */
+    justify-content: space-between;
+
+}
+
+.second-banner-container .big-image img {
+    width: 600px;
+    height: 700px;
+    margin-left: -18px;
+}
+
+.second-banner-container .big-image, .second-banner-container .small-image {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    margin-left: 30px;
+}
+
+.second-banner-container .small-image img {
+    width: 420px;
+    height: 380px;
+    margin-left: -98px;
+}
+
+.second-banner-container .text {
+    width: 8%;
+
+}
+
+.second-banner-container .text h1 {
+    font-size: 52px;
+    line-height: 3;
+    margin-left: -70px;
+
+}
+
+/* finish sencond banner style */
+
+/* start service style */
+
+.service-container {
+    background-color: #F0F0F0;
+    height: 115vh;
+}
+
+.service-container ul{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.service-container ul li {
+    text-align: center;
+}
+
+.service-container ul .atome button{
+    border: solid;
+    padding: 12px;
+}
+
+.service-container ul li img {
+    width: 48px;
+    height: 48px;
+}
+
+.service-container ul li h4 {
+    margin-top: 12px;
+}
+
+.service-container ul li p {
+    margin-top: 12px;
+}
+
+.atome, .box, .flower, .repair, .insider, .gift {
+    width: 30%;
+    margin-top: 100px;
+}
+
+.atome {
+    margin-top: 145px;
+
+}
+
+.box {
+    margin-top: 64px;
+}
+
+.insider {
+    margin-top: 57px;
+}
+
+.gift {
+    margin-top: 88px;
+}
+
+/* start footer style */ 
+
+footer {
+    width: 85%;
+    margin: auto;
+    background: #ffffff;
+    color: white;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.infomation {
+    /* Adds spacing between elements */
+    margin-bottom: 2rem;
+    padding: 0 2rem; /* Optional padding for better spacing */
+}
+
+.infomation img {
+    width: 55px;
+    height: 80px;
+    margin-left: 20px;
+    margin-right: 1rem; /* Adds space between image and text */
+}
+
+.infomation h1 {
+    font-size: 1.5rem;
+    color: #DA70D6;
+    margin: 0; /* Removes default margin for alignment */
+}
+
+.infomation button { 
+font-size: 1rem;
+border-radius: 8px;
+background: #000000;
+color: #ffffff;
+border: none;
+padding: 12px;/* Pushes the button to the far right */
+cursor: pointer;
+transition: background 0.3s ease;
+}
+
+.infomation button a {
+    color: white;
+    text-decoration: none;
+}
+
+.infomation button:hover {
+background: #444; /* Optional hover effect for the button */
+}
+
+
+.footer-container {
+    margin-left: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    margin-left: 64px;
+    flex: 1;
+    min-width: 100px;
+    margin: 1rem;
+}
+
+.long-section {
+    min-width: 300px;
+
+}
+
+.footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #000000;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.75rem;
+    color: #000000;
+
+}
+
+.footer-section ul li a {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #007bff;
+}
+
+.footer-section p {
+    color: #000000;
+    margin: 0.5rem 0;
+}
+
+/* finish footer style */ 
+
+
+
+
+
+
+
+
+
 
 
 
