@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    font-family: "Inria Sans", serif;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+/* start navbar style */
+nav {
+    background-color: #F0F0F0;
+    padding-bottom: 32px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.nav-container {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F0F0F0;
+}
+
+.active {
+    color: #DA70D6;
+}
+
+.active:hover {
+    text-decoration: underline;
+}
+
+nav .logo img {
+    margin-left: 36px;
+}
+
+nav .logo h1 {
+    color: #DA70D6;
+}
+
+nav .nav-li {
+    margin: auto;
+    justify-content: center;
+}
+
+nav .nav-li ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px ;    
+}
+
+nav .nav-li ul li{
+    padding: 20px;
+}
+
+nav .nav-li ul li a.active{
+    /* text-decoration: solid 1px; */
+    color: #DA70D6;
+}
+
+nav .nav-li ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+
+}
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+.input-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-group input {
+    padding: 12px;
+    outline: none;
+    border-radius: 25px;
+    border: 1px solid lightgray;
+    width: 80%;
+}
+
+.input-group-btn {
+    margin-left: -34px;
+    padding-bottom: 4px;
+}
+
+.btn {
+    border: none;
+    background: none;
+}
+
+
+
+.btnLogSign {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.btnLogSign button {
+    background-color: #DA70D6;
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+.btnLogSign button a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* end navbar style */
+
+
+.container {
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.info {
+    padding: 24px 48px;
+    background-color: #FFF5FF;
+    margin-top: 24px;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.info h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #DA70D6;
+}
+
+
+
+#headingOne {
+    color: black;
+    font-weight: normal;
+    font-size: 4rem;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.info hr {
+    width: 50%;
+    margin: auto;
+    border: 1px solid #000000;
+}
+
+.info #walkbag {
+    margin-top: 28px;
+    font-weight: normal;
+}
+.info p {
+    font-weight: normal;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 24px;
+}
+
+.image #baaags {
+    margin-top: 100px;
+    margin-left: 200px;
+    border-radius: 24px;
+    width: 400px;
+    height: 480px;
+} 
+
+.image #shoess {
+    border-radius: 24px;
+    margin-left: 300px;
+    width: 400px;
+    height: 480px;
+} 
+
+
+
+.container .mission-vision {
+    margin: auto;
+    width: 100%;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.mission-vision h3 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #000000;
+}
+
+.mission-vision #mission {
+    width: 80%;
+    margin: auto;
+    font-size: 1.2rem;
+
+}
+
+
+.mission-vision #Vision {
+    margin-top: 24px;
+}
+.mission-vision #vision {
+    margin: auto;   
+    width: 76%;
+    font-size: 1.2rem;
+}
+.mission-vision p {
+    margin-top: 12px;
+    font-weight: normal;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+.mission-vision h3:hover {
+    text-decoration: underline;
+    color: #ff004c;
+    text-decoration-thickness: 3px;
+    cursor: pointer;
+}
+
+.container .more-image {
+    margin: auto;
+    width: 90%;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.more-image #SUPERSHOES {
+    margin-left: 126px;
+}
+
+.more-image img {
+    width: 400px;
+    height: 480px;
+    border-radius: 24px;
+}
+
+.more-image #SUPERBAGS  {
+    margin-left: 300px;
+}
+
+main {
+    margin: auto;
+    width: 100%;
+    gap: 48px;
+    margin-top: 100px;
+    padding: 24px;
+    display: flex;
+    align-items: center;
+}
+
+main img {
+    width: 800px;
+    height: 400px;
+    border-radius: 24px;
+}
+
+main .letters {
+    margin-left: 24px;
+    width: 64%;
+}
+
+main .letters .model {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+main .letters .model h1 {
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+}
+
+main .letters .model p {
+    margin-top: -12px;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: Arial, sans-serif;
+}
+
+
+main .letters .modelOne {
+    margin-top: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+main .letters .modelOne h1 {
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+}
+
+main .letters .modelOne p {
+    margin-top: -12px;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: Arial, sans-serif;
+}
+
+main .letters .modelTwo {
+    margin-top: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+}
+
+main .letters .modelTwo h1 {
+    font-size: 2.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+}
+
+main .letters .modelTwo p {
+    margin-top: -12px;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: Arial, sans-serif;
+}
+
+
+.footer {
+    width: 100%;
+    font-weight: normal;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    margin-top: 100px;
+}
+
+.footer-container {
+    background-color: #f0f0f0;
+    width: 85%;
+    margin: auto;
+}
+
+.infomation {
+    /* Adds spacing between elements */
+    background-color: #F0F0F0;
+    margin-bottom: 2rem;
+    padding: 0 2rem; /* Optional padding for better spacing */
+}
+
+.infomation img {
+    width: 55px;
+    height: 80px;
+    margin-left: 20px;
+    margin-right: 1rem; /* Adds space between image and text */
+}
+
+.infomation h1 {
+    font-size: 1.5rem;
+    color: #DA70D6;
+    text-decoration: none;
+    margin: 0; /* Removes default margin for alignment */
+}
+
+.infomation button { 
+font-size: 1rem;
+border-radius: 8px;
+background: #000000;
+color: #ffffff;
+border: none;
+padding: 12px;/* Pushes the button to the far right */
+cursor: pointer;
+transition: background 0.3s ease;
+}
+
+.infomation button a {
+    color: white;
+    text-decoration: none;
+}
+
+.infomation button:hover {
+background: #444; /* Optional hover effect for the button */
+}
+
+
+.footer-container {
+    margin-left: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    margin-left: 64px;
+    flex: 1;
+    min-width: 100px;
+    margin: 1rem;
+    background-color: #F0F0F0;
+}
+
+.long-section {
+    min-width: 300px;
+
+}
+
+.footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #000000;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.75rem;
+    color: #000000;
+
+}
+
+.footer-section ul li a {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #007bff;
+}
+
+.footer-section p {
+    color: #000000;
+    margin: 0.5rem 0;
+}
