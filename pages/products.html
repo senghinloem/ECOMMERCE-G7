@@ -5,10 +5,466 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product</title>
     <link rel="stylesheet" href="../css/product.css">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="../images/image_product/Logo.png" alt="logo">
+                <h1>Walkbag</h1>
+            </div>
+            <div class="nav-li">
+                <ul>
+                    <li><a  href="index.html">HOME</a></li>
+                    <li class="dropdown"><a  class="active" href="pages/products.html">PRODUCTS</a>
+                        <div >
+                            <div class="dropdown-content">
+                              <a href="pages/products.html">All</a>
+                              <a href="#">Shoes</a>
+                              <a href="#">Bags</a>
+                              <a href="pages/favourite.html">Favourites</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="pages/yourcart.html">YOUR CARD</a></li>
+                    <li><a href="pages/about.html">ABOUT US</a></li>
+                    <li><a href="pages/contact.html">CONTACT US</a></li>
+                    <li><a href="pages/account.html">ACCOUNT</a></li>
+                </ul>   
+                <form>
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Search">
+                      <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                      </div>
+                    </div>
+                </form>
+            </div>
+            <div class="btnLogSign">
+                <button> <a href="pages/login.html">Log in</a></button>
+                <button> <a href="pages/signup.html">Sign up</a></button>
+            </div>
+        </div>
+    </nav>
     <div class="container">
-        
+        <div id="option" class="option">
+            <hr>
+            <select id="color">
+                <option disabled selected>Color</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+            </select>
+            <hr>
+            <select id="size">
+                <option disabled selected>Size</option>
+                <option value="s">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+                <option value="xl">XL</option>
+                <option value="xxl">XXL</option>
+            </select>
+            <hr>
+            <select id="handbag_size">
+                <option disabled selected>Handbag Size</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="extra_large">Extra Large</option>
+            </select>
+            <hr>
+            <select id="price">
+                <option disabled selected>Price</option>
+                <option value="1">USD100.00</option>
+                <option value="2">USD120.00</option>
+                <option value="3">USD140.00</option>
+                <option value="4">USD160.00</option>
+                <option value="5">USD180.00</option>
+                <option value="6">USD200.00</option>
+                <option value="7">USD220.00</option>
+                <option value="8">USD240.00</option>
+                <option value="9">USD260.00</option>
+                <option value="10">USD280.00</option>
+                <option value="11">USD300.00</option>
+                <option value="12">USD320.00</option>
+                <option value="13">USD340.00</option>
+                <option value="14">USD360.00</option>
+                <option value="15">USD380.00</option>
+                <option value="16">USD400.00</option>
+            </select>
+        </div>
+        <div class="image_product" id="image_product">
+            <h1>Bags</h1>   
+            <div class="superBags">
+                <div class="image">
+                    <img src="../images/image_product/bag.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                    <div class="info">
+                        <h2>CARGO TOTE</h2>
+                        <P>USD 100.00</P>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="image1">
+                    <img src="../images/image_product/bag1.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                    <div class="info1">
+                        <h2>TABBY</h2>
+                        <P>USD 100.00</P>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="image2">
+                    <img src="../images/image_product/bag2.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                    <div class="info2">
+                        <h2>JULIET</h2>
+                        <P>USD 100.00</P>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="image3">
+                    <img src="../images/image_product/bag3.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                    <div class="info3">
+                        <h2>CANGO</h2>
+                        <P>USD 100.00</P>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="image4">
+                    <img src="../images/image_product/bag4.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                    <div class="info4">
+                        <h2>MINI SKINNY</h2>
+                        <P>USD 100.00</P>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="image5">
+                    <img src="../images/image_product/bag5.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                    <div class="info5">
+                        <h2>ESSENTIAL</h2>
+                        <P>USD 100.00</P>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="image6">
+                    <img src="../images/image_product/bag6.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                    <div class="info6">
+                        <h2>POUCH BAG</h2>
+                        <P>USD 100.00</P>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="image7">
+                    <img src="../images/image_product/bag7.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                    <div class="info7">
+                        <h2>CASSIE</h2>
+                        <P>USD 100.00</P>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="image9">
+                    <img src="../images/image_product/bag10.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                    <div class="info9">
+                        <h2>STUDIO</h2>
+                        <P>USD 100.00</P>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="image10">
+                    <img src="../images/image_product/bag12.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                    <div class="info10">
+                        <h2>KIRA</h2>
+                        <P>USD 100.00</P>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="image11">
+                    <img src="../images/image_product/bag13.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                    <div class="info11">
+                        <h2>HOBO</h2>
+                        <P>USD 100.00</P>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="image12">
+                    <img src="../images/image_product/bag15.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                    <div class="info12">
+                        <h2>RELAY</h2>
+                        <P>USD 100.00</P>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="image13">
+                    <img src="../images/image_product/bag16.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                    <div class="info13">
+                        <h2>BANDIT</h2>
+                        <P>USD 100.00</P>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="image14">
+                    <img src="../images/image_product/bag17.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                    <div class="info14">
+                        <h2>WILLOW</h2>
+                        <P>USD 100.00</P>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="image15">
+                    <img src="../images/image_product/bag18.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                    <div class="info15">
+                        <h2>ROUGE</h2>
+                        <P>USD 100.00</P>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="image16">
+                    <img src="../images/image_product/bag19.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                    <div class="info16">
+                        <h2>TOP HANDLE</h2>
+                        <P>USD 100.00</P>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="image17">
+                    <img src="../images/image_product/bag20.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                    <div class="info17">
+                        <h2>NIKKI</h2>
+                        <P>USD 100.00</P>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="image18">
+                    <img src="../images/image_product/bag21.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                    <div class="info18">
+                        <h2>ROBERTO</h2>
+                        <P>USD 100.00</P>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="image19">
+                    <img src="../images/image_product/bag22.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                    <div class="info19">
+                        <h2>TALI</h2>
+                        <P>USD 100.00</P>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="image20">
+                    <img src="../images/image_product/bag23.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                    <div class="info20">
+                        <h2>HIPY</h2>
+                        <P>USD 100.00</P>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+            <h1 id="shoes">Shoes</h1>
+            <div class="superShoes">
+                <div class="Image">
+                    <img src="../images/image_product/shoes.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                    <div class="Info">
+                        <h2>KILUUK</h2>
+                        <P>USD 25.00</P>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="Image1">
+                    <img src="../images/image_product/shoes1.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                    <div class="Info1">
+                        <h2>JUMPPY</h2>
+                        <P>USD 25.00</P>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="Image2">
+                    <img src="../images/image_product/shoes2.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                    <div class="Info2">
+                        <h2>XAPPDI</h2>
+                        <P>USD 25.00</P>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="Image3">
+                    <img src="../images/image_product/shoes3.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                    <div class="Info3">
+                        <h2>HUMRRY</h2>
+                        <P>USD 25.00</P>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="Image4">
+                    <img src="../images/image_product/shoes4.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                    <div class="Info4">
+                        <h2>WLGOO</h2>
+                        <P>USD 25.00</P>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="Image5">
+                    <img src="../images/image_product/shoes5.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                    <div class="Info5">
+                        <h2>ROTO</h2>
+                        <P>USD 25.00</P>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="Image6">
+                    <img src="../images/image_product/shoes6.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                    <div class="Info6">
+                        <h2>VIEP</h2>
+                        <P>USD 25.00</P>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="Image7">
+                    <img src="../images/image_product/shoes7.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                    <div class="Info7">
+                        <h2>TYTDI</h2>
+                        <P>USD 25.00</P>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="Image8">
+                    <img src="../images/image_product/shoes8.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                    <div class="Info8">
+                        <h2>KDRII</h2>
+                        <P>USD 25.00</P>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="Image9">
+                    <img src="../images/image_product/shoes9.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                    <div class="Info9">
+                        <h2>DYYTEO</h2>
+                        <P>USD 25.00</P>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="Image10">
+                    <img src="../images/image_product/shoes10.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                    <div class="Info10">
+                        <h2>SIPLE</h2>
+                        <P>USD 25.00</P>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="Image11">
+                    <img src="../images/image_product/shoes11.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                    <div class="Info11">
+                        <h2>TRYVOHA</h2>
+                        <P>USD 25.00</P>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="Image12">
+                    <img src="../images/image_product/shoes12.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                    <div class="Info12">
+                        <h2>YATH</h2>
+                        <P>USD 25.00</P>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="Image13">
+                    <img src="../images/image_product/shoes13.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                    <div class="Info13">
+                        <h2>KAMFA</h2>
+                        <P>USD 25.00</P>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="Image14">
+                    <img src="../images/image_product/shoes14.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                    <div class="Info14">
+                        <h2>WWP</h2>
+                        <P>USD 25.00</P>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="Image15">
+                    <img src="../images/image_product/shoes15.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                    <div class="Info15">
+                        <h2>NAROTO</h2>
+                        <P>USD 25.00</P>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="Image16">
+                    <img src="../images/image_product/shoes16.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                    <div class="Info16">
+                        <h2>YYN</h2>
+                        <P>USD 25.00</P>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="Image17">
+                    <img src="../images/image_product/shoes17.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                    <div class="Info17">
+                        <h2>SIGINO</h2>
+                        <P>USD 25.00</P>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="Image18">
+                    <img src="../images/image_product/shoes18.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                    <div class="Info18">
+                        <h2>DIKO</h2>
+                        <P>USD 25.00</P>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="Image19">
+                    <img src="../images/image_product/shoes19.png" alt="">
+                    <i class="fa-regular fa-heart"></i>
+                    <div class="Info19">
+                        <h2>JIGANN</h2>
+                        <P>USD 25.00</P>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
