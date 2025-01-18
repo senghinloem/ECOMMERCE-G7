@@ -18,10 +18,15 @@ body {
 /* start navbar style */
 nav {
     background-color: #F0F0F0;
-    padding-bottom: 20px;
+    padding-bottom: 32px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 .nav-container {
-    width: 90%;
+    width: 85%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -29,9 +34,12 @@ nav {
     background-color: #F0F0F0;
 }
 
-a.active {
-    text-decoration: underline #DA70D6;
+.active {
     color: #DA70D6;
+}
+
+.active:hover {
+    text-decoration: underline;
 }
 
 nav .logo img {
@@ -40,12 +48,13 @@ nav .logo img {
 
 nav .logo h1 {
     color: #DA70D6;
+    text-decoration: none;
+    font-size: 36px;
 }
 
 nav .nav-li {
     margin: auto;
     justify-content: center;
-    /* background-color: #70da9a; */
 }
 nav .nav-li ul{
     display: flex;
@@ -59,13 +68,15 @@ nav .nav-li ul li{
 }
 
 nav .nav-li ul li a.active{
-    text-decoration: solid 1px;
+    /* text-decoration: solid 1px; */
     color: #DA70D6;
 }
 
 nav .nav-li ul li a{
     text-decoration: none;
     color: black;
+    font-weight: bold;
+
 }
   
   /* The container <div> - needed to position the dropdown content */
@@ -141,10 +152,9 @@ nav .nav-li ul li a{
 
 .btnLogSign button a{
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: bold;
 }
-
 /* finish navbar style */
 
 
@@ -157,7 +167,7 @@ nav .nav-li ul li a{
     width: 90%;
     margin: auto;
     display: flex;
-    margin-top: 100px;
+    margin-top: 240px;
 }
 
 #option {
@@ -1122,3 +1132,114 @@ h1 {
     cursor: pointer;
 }
 
+.footer {
+    width: 100%;
+    font-weight: normal;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    margin-top: 100px;
+}
+
+.footer-container {
+    background-color: #f0f0f0;
+    width: 85%;
+    margin: auto;
+}
+
+.infomation {
+    /* Adds spacing between elements */
+    background-color: #F0F0F0;
+    margin-bottom: 2rem;
+    padding: 0 2rem; /* Optional padding for better spacing */
+}
+
+.infomation img {
+    width: 55px;
+    height: 80px;
+    margin-left: 20px;
+    margin-right: 1rem; /* Adds space between image and text */
+}
+
+.infomation h1 {
+    font-size: 1.5rem;
+    color: #DA70D6;
+    text-decoration: none;
+    margin: 0; /* Removes default margin for alignment */
+}
+
+.infomation button { 
+font-size: 1rem;
+border-radius: 8px;
+background: #000000;
+color: #ffffff;
+border: none;
+padding: 12px;/* Pushes the button to the far right */
+cursor: pointer;
+transition: background 0.3s ease;
+}
+
+.infomation button a {
+    color: white;
+    text-decoration: none;
+}
+
+.infomation button:hover {
+background: #444; /* Optional hover effect for the button */
+}
+
+
+.footer-container {
+    margin-left: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    margin-left: 64px;
+    flex: 1;
+    min-width: 100px;
+    margin: 1rem;
+    background-color: #F0F0F0;
+}
+
+.long-section {
+    min-width: 300px;
+
+}
+
+.footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #000000;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.75rem;
+    color: #000000;
+
+}
+
+.footer-section ul li a {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #007bff;
+}
+
+.footer-section p {
+    color: #000000;
+    margin: 0.5rem 0;
+}
