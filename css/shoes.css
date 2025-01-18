@@ -1,0 +1,1124 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    font-family: "Inria Sans", serif;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+/* start navbar style */
+nav {
+    background-color: #F0F0F0;
+    padding-bottom: 20px;
+}
+.nav-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F0F0F0;
+}
+
+a.active {
+    text-decoration: underline #DA70D6;
+    color: #DA70D6;
+}
+
+nav .logo img {
+    margin-left: 36px;
+}
+
+nav .logo h1 {
+    color: #DA70D6;
+}
+
+nav .nav-li {
+    margin: auto;
+    justify-content: center;
+    /* background-color: #70da9a; */
+}
+nav .nav-li ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px ;    
+}
+
+nav .nav-li ul li{
+    padding: 20px;
+}
+
+nav .nav-li ul li a.active{
+    text-decoration: solid 1px;
+    color: #DA70D6;
+}
+
+nav .nav-li ul li a{
+    text-decoration: none;
+    color: black;
+}
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+.input-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-group input {
+    padding: 12px;
+    outline: none;
+    border-radius: 25px;
+    border: 1px solid lightgray;
+    width: 80%;
+}
+
+.input-group-btn {
+    margin-left: -34px;
+    padding-bottom: 4px;
+}
+
+.btn {
+    border: none;
+    background: none;
+}
+
+
+
+.btnLogSign {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.btnLogSign button {
+    background-color: #DA70D6;
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+.btnLogSign button a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* finish navbar style */
+
+
+
+
+/* product_page */
+
+.container {
+    gap: 100px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    margin-top: 100px;
+}
+
+#option {
+    gap: 20px;
+    padding: 16px;
+}
+
+hr {
+    width: 320px;
+    color: #cbcbcb;
+}
+
+#color {
+    width: 320px;
+    border: none;
+    font-size: 16px;
+    color: black;
+}
+#size {
+    width: 320px;
+    border: none;
+    font-size: 16px;
+    color: black;
+}
+#handbag_size {
+    width: 320px;
+    border: none;
+    font-size: 16px;
+    color: black;
+}
+#price {
+    width: 320px;
+    border: none;
+    font-size: 16px;
+    color: black;
+}
+
+#image_product {
+    width: 100%;
+    padding: 0;
+}
+
+h1 {
+
+    font-size: 32px;
+    color: #DA70D6;
+    text-decoration: underline;
+}
+
+#shoes {
+    margin-top: 24px;
+}
+
+.superShoes {
+    margin-left: 90px;
+    margin-top: 40px;
+    gap: 64px;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.Image {
+    padding: 0;
+    margin: 0;
+    position: relative; /* Set the container's position to relative */
+}
+
+.Image img {
+    display: block; /* Ensures proper layout of the image */
+    width: 100%; /* Optional: Adjust the width as needed */
+    height: auto; /* Optional: Maintain aspect ratio */
+}
+
+.Image i {
+    position: absolute; /* Allows positioning relative to the .image container */
+    top: 10px; /* Adjust the position from the top */
+    right: 10px; /* Adjust the position from the right */
+    font-size: 20px; /* Size of the heart icon */
+    color: #ff0000; /* Change to your desired color */
+    cursor: pointer; /* Optional: Change cursor style to pointer */
+}
+
+.Image .Info h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #000000;
+}
+
+.Image .Info p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: black;
+}
+
+.Image .Info button {
+    background-color: #000000;
+    border: none;
+    padding: 8px;
+    border-radius: 12px;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.Image1 {
+    padding: 0;
+    margin: 0;
+    position: relative; /* Set the container's position to relative */
+}
+
+.Image1 img {
+    display: block; /* Ensures proper layout of the image */
+    width: 100%; /* Optional: Adjust the width as needed */
+    height: auto; /* Optional: Maintain aspect ratio */
+}
+
+.Image1 i {
+    position: absolute; /* Allows positioning relative to the .image container */
+    top: 10px; /* Adjust the position from the top */
+    right: 10px; /* Adjust the position from the right */
+    font-size: 20px; /* Size of the heart icon */
+    color: #ff0000; /* Change to your desired color */
+    cursor: pointer; /* Optional: Change cursor style to pointer */
+}
+
+.Image1 .Info1 h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #000000;
+}
+
+.Image1 .Info1 p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: black;
+}
+
+.Image1 .Info1 button {
+    background-color: #000000;
+    border: none;
+    padding: 8px;
+    border-radius: 12px;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.Image2 {
+    padding: 0;
+    margin: 0;
+    position: relative; /* Set the container's position to relative */
+}
+
+.Image2 img {
+    display: block; /* Ensures proper layout of the image */
+    width: 100%; /* Optional: Adjust the width as needed */
+    height: auto; /* Optional: Maintain aspect ratio */
+}
+
+.Image2 i {
+    position: absolute; /* Allows positioning relative to the .image container */
+    top: 10px; /* Adjust the position from the top */
+    right: 10px; /* Adjust the position from the right */
+    font-size: 20px; /* Size of the heart icon */
+    color: #ff0000; /* Change to your desired color */
+    cursor: pointer; /* Optional: Change cursor style to pointer */
+}
+
+.Image2 .Info2 h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #000000;
+}
+
+.Image2 .Info2 p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: black;
+}
+
+.Image2 .Info2 button {
+    background-color: #000000;
+    border: none;
+    padding: 8px;
+    border-radius: 12px;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.Image3 {
+    padding: 0;
+    margin: 0;
+    position: relative; /* Set the container's position to relative */
+}
+
+.Image3 img {
+    display: block; /* Ensures proper layout of the image */
+    width: 100%; /* Optional: Adjust the width as needed */
+    height: auto; /* Optional: Maintain aspect ratio */
+}
+
+.Image3 i {
+    position: absolute; /* Allows positioning relative to the .image container */
+    top: 10px; /* Adjust the position from the top */
+    right: 10px; /* Adjust the position from the right */
+    font-size: 20px; /* Size of the heart icon */
+    color: #ff0000; /* Change to your desired color */
+    cursor: pointer; /* Optional: Change cursor style to pointer */
+}
+
+.Image3 .Info3 h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #000000;
+}
+
+.Image3 .Info3 p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: black;
+}
+
+.Image3 .Info3 button {
+    background-color: #000000;
+    border: none;
+    padding: 8px;
+    border-radius: 12px;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.Image4 {
+    padding: 0;
+    margin: 0;
+    position: relative; /* Set the container's position to relative */
+}
+
+.Image4 img {
+    display: block; /* Ensures proper layout of the image */
+    width: 100%; /* Optional: Adjust the width as needed */
+    height: auto; /* Optional: Maintain aspect ratio */
+}
+
+.Image4 i {
+    position: absolute; /* Allows positioning relative to the .image container */
+    top: 10px; /* Adjust the position from the top */
+    right: 10px; /* Adjust the position from the right */
+    font-size: 20px; /* Size of the heart icon */
+    color: #ff0000; /* Change to your desired color */
+    cursor: pointer; /* Optional: Change cursor style to pointer */
+}
+
+.Image4 .Info4 h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #000000;
+}
+
+.Image4 .Info4 p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: black;
+}
+
+.Image4 .Info4 button {
+    background-color: #000000;
+    border: none;
+    padding: 8px;
+    border-radius: 12px;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.Image5 {
+    padding: 0;
+    margin: 0;
+    position: relative; /* Set the container's position to relative */
+}
+
+.Image5 img {
+    display: block; /* Ensures proper layout of the image */
+    width: 100%; /* Optional: Adjust the width as needed */
+    height: auto; /* Optional: Maintain aspect ratio */
+}
+
+.Image5 i {
+    position: absolute; /* Allows positioning relative to the .image container */
+    top: 10px; /* Adjust the position from the top */
+    right: 10px; /* Adjust the position from the right */
+    font-size: 20px; /* Size of the heart icon */
+    color: #ff0000; /* Change to your desired color */
+    cursor: pointer; /* Optional: Change cursor style to pointer */
+}
+
+.Image5 .Info5 h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #000000;
+}
+
+.Image5 .Info5 p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: black;
+}
+
+.Image5 .Info5 button {
+    background-color: #000000;
+    border: none;
+    padding: 8px;
+    border-radius: 12px;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.Image6 {
+    padding: 0;
+    margin: 0;
+    position: relative; /* Set the container's position to relative */
+}
+
+.Image6 img {
+    display: block; /* Ensures proper layout of the image */
+    width: 100%; /* Optional: Adjust the width as needed */
+    height: auto; /* Optional: Maintain aspect ratio */
+}
+
+.Image6 i {
+    position: absolute; /* Allows positioning relative to the .image container */
+    top: 10px; /* Adjust the position from the top */
+    right: 10px; /* Adjust the position from the right */
+    font-size: 20px; /* Size of the heart icon */
+    color: #ff0000; /* Change to your desired color */
+    cursor: pointer; /* Optional: Change cursor style to pointer */
+}
+
+.Image6 .Info6 h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #000000;
+}
+
+.Image6 .Info6 p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: black;
+}
+
+.Image6 .Info6 button {
+    background-color: #000000;
+    border: none;
+    padding: 8px;
+    border-radius: 12px;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.Image7 {
+    padding: 0;
+    margin: 0;
+    position: relative; /* Set the container's position to relative */
+}
+
+.Image7 img {
+    display: block; /* Ensures proper layout of the image */
+    width: 100%; /* Optional: Adjust the width as needed */
+    height: auto; /* Optional: Maintain aspect ratio */
+}
+
+.Image7 i {
+    position: absolute; /* Allows positioning relative to the .image container */
+    top: 10px; /* Adjust the position from the top */
+    right: 10px; /* Adjust the position from the right */
+    font-size: 20px; /* Size of the heart icon */
+    color: #ff0000; /* Change to your desired color */
+    cursor: pointer; /* Optional: Change cursor style to pointer */
+}
+
+.Image7 .Info7 h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #000000;
+}
+
+.Image7 .Info7 p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: black;
+}
+
+.Image7 .Info7 button {
+    background-color: #000000;
+    border: none;
+    padding: 8px;
+    border-radius: 12px;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.Image8 {
+    padding: 0;
+    margin: 0;
+    position: relative; /* Set the container's position to relative */
+}
+
+.Image8 img {
+    display: block; /* Ensures proper layout of the image */
+    width: 100%; /* Optional: Adjust the width as needed */
+    height: auto; /* Optional: Maintain aspect ratio */
+}
+
+.Image8 i {
+    position: absolute; /* Allows positioning relative to the .image container */
+    top: 10px; /* Adjust the position from the top */
+    right: 10px; /* Adjust the position from the right */
+    font-size: 20px; /* Size of the heart icon */
+    color: #ff0000; /* Change to your desired color */
+    cursor: pointer; /* Optional: Change cursor style to pointer */
+}
+
+.Image8 .Info8 h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #000000;
+}
+
+.Image8 .Info8 p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: black;
+}
+
+.Image8 .Info8 button {
+    background-color: #000000;
+    border: none;
+    padding: 8px;
+    border-radius: 12px;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.Image9 {
+    padding: 0;
+    margin: 0;
+    position: relative; /* Set the container's position to relative */
+}
+
+.Image9 img {
+    display: block; /* Ensures proper layout of the image */
+    width: 100%; /* Optional: Adjust the width as needed */
+    height: auto; /* Optional: Maintain aspect ratio */
+}
+
+.Image9 i {
+    position: absolute; /* Allows positioning relative to the .image container */
+    top: 10px; /* Adjust the position from the top */
+    right: 10px; /* Adjust the position from the right */
+    font-size: 20px; /* Size of the heart icon */
+    color: #ff0000; /* Change to your desired color */
+    cursor: pointer; /* Optional: Change cursor style to pointer */
+}
+
+.Image9 .Info9 h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #000000;
+}
+
+.Image9 .Info9 p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: black;
+}
+
+.Image9 .Info9 button {
+    background-color: #000000;
+    border: none;
+    padding: 8px;
+    border-radius: 12px;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.Image10 {
+    padding: 0;
+    margin: 0;
+    position: relative; /* Set the container's position to relative */
+}
+
+.Image10 img {
+    display: block; /* Ensures proper layout of the image */
+    width: 100%; /* Optional: Adjust the width as needed */
+    height: auto; /* Optional: Maintain aspect ratio */
+}
+
+.Image10 i {
+    position: absolute; /* Allows positioning relative to the .image container */
+    top: 10px; /* Adjust the position from the top */
+    right: 10px; /* Adjust the position from the right */
+    font-size: 20px; /* Size of the heart icon */
+    color: #ff0000; /* Change to your desired color */
+    cursor: pointer; /* Optional: Change cursor style to pointer */
+}
+
+.Image10 .Info10 h2 {
+    font-family: Arial,Helvetica, sans-serif;
+    font-size: 16px;
+    color: #000000;
+}
+
+.Image10 .Info10 p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: black;
+}
+
+.Image10 .Info10 button {
+    background-color: #000000;
+    border: none;
+    padding: 8px;
+    border-radius: 12px;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.Image11 {
+    padding: 0;
+    margin: 0;
+    position: relative; /* Set the container's position to relative */
+}
+
+.Image11 img {
+    display: block; /* Ensures proper layout of the image */
+    width: 100%; /* Optional: Adjust the width as needed */
+    height: auto; /* Optional: Maintain aspect ratio */
+}
+
+.Image11 i {
+    position: absolute; /* Allows positioning relative to the .image container */
+    top: 10px; /* Adjust the position from the top */
+    right: 10px; /* Adjust the position from the right */
+    font-size: 20px; /* Size of the heart icon */
+    color: #ff0000; /* Change to your desired color */
+    cursor: pointer; /* Optional: Change cursor style to pointer */
+}
+
+.Image11 .Info11 h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #000000;
+}
+
+.Image11 .Info11 p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: black;
+}
+
+.Image11 .Info11 button {
+    background-color: #000000;
+    border: none;
+    padding: 8px;
+    border-radius: 12px;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.Image12 {
+    padding: 0;
+    margin: 0;
+    position: relative; /* Set the container's position to relative */
+}
+
+.Image12 img {
+    display: block; /* Ensures proper layout of the image */
+    width: 100%; /* Optional: Adjust the width as needed */
+    height: auto; /* Optional: Maintain aspect ratio */
+}
+
+.Image12 i {
+    position: absolute; /* Allows positioning relative to the .image container */
+    top: 10px; /* Adjust the position from the top */
+    right: 10px; /* Adjust the position from the right */
+    font-size: 20px; /* Size of the heart icon */
+    color: #ff0000; /* Change to your desired color */
+    cursor: pointer; /* Optional: Change cursor style to pointer */
+}
+
+.Image12 .Info12 h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #000000;
+}
+
+.Image12 .Info12 p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: black;
+}
+
+.Image12 .Info12 button {
+    background-color: #000000;
+    border: none;
+    padding: 8px;
+    border-radius: 12px;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.Image13 {
+    padding: 0;
+    margin: 0;
+    position: relative; /* Set the container's position to relative */
+}
+
+.Image13 img {
+    display: block; /* Ensures proper layout of the image */
+    width: 100%; /* Optional: Adjust the width as needed */
+    height: auto; /* Optional: Maintain aspect ratio */
+}
+
+.Image13 i {
+    position: absolute; /* Allows positioning relative to the .image container */
+    top: 10px; /* Adjust the position from the top */
+    right: 10px; /* Adjust the position from the right */
+    font-size: 20px; /* Size of the heart icon */
+    color: #ff0000; /* Change to your desired color */
+    cursor: pointer; /* Optional: Change cursor style to pointer */
+}
+
+.Image13 .Info13 h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #000000;
+}
+
+.Image13 .Info13 p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: black;
+}
+
+.Image13 .Info13 button {
+    background-color: #000000;
+    border: none;
+    padding: 8px;
+    border-radius: 12px;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.Image14 {
+    padding: 0;
+    margin: 0;
+    position: relative; /* Set the container's position to relative */
+}
+
+.Image14 img {
+    display: block; /* Ensures proper layout of the image */
+    width: 100%; /* Optional: Adjust the width as needed */
+    height: auto; /* Optional: Maintain aspect ratio */
+}
+
+.Image14 i {
+    position: absolute; /* Allows positioning relative to the .image container */
+    top: 10px; /* Adjust the position from the top */
+    right: 10px; /* Adjust the position from the right */
+    font-size: 20px; /* Size of the heart icon */
+    color: #ff0000; /* Change to your desired color */
+    cursor: pointer; /* Optional: Change cursor style to pointer */
+}
+
+.Image14 .Info14 h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #000000;
+}
+
+.Image14 .Info14 p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: black;
+}
+
+.Image14 .Info14 button {
+    background-color: #000000;
+    border: none;
+    padding: 8px;
+    border-radius: 12px;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.Image15 {
+    padding: 0;
+    margin: 0;
+    position: relative; /* Set the container's position to relative */
+}
+
+.Image15 img {
+    display: block; /* Ensures proper layout of the image */
+    width: 100%; /* Optional: Adjust the width as needed */
+    height: auto; /* Optional: Maintain aspect ratio */
+}
+
+.Image15 i {
+    position: absolute; /* Allows positioning relative to the .image container */
+    top: 10px; /* Adjust the position from the top */
+    right: 10px; /* Adjust the position from the right */
+    font-size: 20px; /* Size of the heart icon */
+    color: #ff0000; /* Change to your desired color */
+    cursor: pointer; /* Optional: Change cursor style to pointer */
+}
+
+.Image15 .Info15 h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #000000;
+}
+
+.Image15 .Info15 p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: black;
+}
+
+.Image15 .Info15 button {
+    background-color: #000000;
+    border: none;
+    padding: 8px;
+    border-radius: 12px;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.Image16 {
+    padding: 0;
+    margin: 0;
+    position: relative; /* Set the container's position to relative */
+}
+
+.Image16 img {
+    display: block; /* Ensures proper layout of the image */
+    width: 100%; /* Optional: Adjust the width as needed */
+    height: auto; /* Optional: Maintain aspect ratio */
+}
+
+.Image16 i {
+    position: absolute; /* Allows positioning relative to the .image container */
+    top: 10px; /* Adjust the position from the top */
+    right: 10px; /* Adjust the position from the right */
+    font-size: 20px; /* Size of the heart icon */
+    color: #ff0000; /* Change to your desired color */
+    cursor: pointer; /* Optional: Change cursor style to pointer */
+}
+
+.Image16 .Info16 h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #000000;
+}
+
+.Image16 .Info16 p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: black;
+}
+
+.Image16 .Info16 button {
+    background-color: #000000;
+    border: none;
+    padding: 8px;
+    border-radius: 12px;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.Image17 {
+    padding: 0;
+    margin: 0;
+    position: relative; /* Set the container's position to relative */
+}
+
+.Image17 img {
+    display: block; /* Ensures proper layout of the image */
+    width: 100%; /* Optional: Adjust the width as needed */
+    height: auto; /* Optional: Maintain aspect ratio */
+}
+
+.Image17 i {
+    position: absolute; /* Allows positioning relative to the .image container */
+    top: 10px; /* Adjust the position from the top */
+    right: 10px; /* Adjust the position from the right */
+    font-size: 20px; /* Size of the heart icon */
+    color: #ff0000; /* Change to your desired color */
+    cursor: pointer; /* Optional: Change cursor style to pointer */
+}
+
+.Image17 .Info17 h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #000000;
+}
+
+.Image17 .Info17 p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: black;
+}
+
+.Image17 .Info17 button {
+    background-color: #000000;
+    border: none;
+    padding: 8px;
+    border-radius: 12px;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.Image18 {
+    padding: 0;
+    margin: 0;
+    position: relative; /* Set the container's position to relative */
+}
+
+.Image18 img {
+    display: block; /* Ensures proper layout of the image */
+    width: 100%; /* Optional: Adjust the width as needed */
+    height: auto; /* Optional: Maintain aspect ratio */
+}
+
+.Image18 i {
+    position: absolute; /* Allows positioning relative to the .image container */
+    top: 10px; /* Adjust the position from the top */
+    right: 10px; /* Adjust the position from the right */
+    font-size: 20px; /* Size of the heart icon */
+    color: #ff0000; /* Change to your desired color */
+    cursor: pointer; /* Optional: Change cursor style to pointer */
+}
+
+.Image18 .Info18 h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #000000;
+}
+
+.Image18 .Info18 p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: black;
+}
+
+.Image18 .Info18 button {
+    background-color: #000000;
+    border: none;
+    padding: 8px;
+    border-radius: 12px;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.Image19 {
+    padding: 0;
+    margin: 0;
+    position: relative; /* Set the container's position to relative */
+}
+
+.Image19 img {
+    display: block; /* Ensures proper layout of the image */
+    width: 100%; /* Optional: Adjust the width as needed */
+    height: auto; /* Optional: Maintain aspect ratio */
+}
+
+.Image19 i {
+    position: absolute; /* Allows positioning relative to the .image container */
+    top: 10px; /* Adjust the position from the top */
+    right: 10px; /* Adjust the position from the right */
+    font-size: 20px; /* Size of the heart icon */
+    color: #ff0000; /* Change to your desired color */
+    cursor: pointer; /* Optional: Change cursor style to pointer */
+}
+
+.Image19 .Info19 h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #000000;
+}
+
+.Image19 .Info19 p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: black;
+}
+
+.Image19 .Info19 button {
+    background-color: #000000;
+    border: none;
+    padding: 8px;
+    border-radius: 12px;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.Image20 {
+    padding: 0;
+    margin: 0;
+    position: relative; /* Set the container's position to relative */
+}
+
+.Image20 img {
+    display: block; /* Ensures proper layout of the image */
+    width: 100%; /* Optional: Adjust the width as needed */
+    height: auto; /* Optional: Maintain aspect ratio */
+}
+
+.Image20 i {
+    position: absolute; /* Allows positioning relative to the .image container */
+    top: 10px; /* Adjust the position from the top */
+    right: 10px; /* Adjust the position from the right */
+    font-size: 20px; /* Size of the heart icon */
+    color: #ff0000; /* Change to your desired color */
+    cursor: pointer; /* Optional: Change cursor style to pointer */
+}
+
+.Image20 .Info20 h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #000000;
+}
+
+.Image20 .Info20 p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: black;
+}
+
+.Image20 .Info20 button {
+    background-color: #000000;
+    border: none;
+    padding: 8px;
+    border-radius: 12px;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+}
