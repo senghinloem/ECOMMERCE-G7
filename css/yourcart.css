@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    font-family: "Inria Sans", serif;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+/* start navbar style */
+nav {
+    background-color: #F0F0F0;
+    padding-bottom: 20px;
+}
+.nav-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F0F0F0;
+}
+
+a.active {
+    text-decoration: underline #DA70D6;
+    color: #DA70D6;
+}
+
+nav .logo img {
+    margin-left: 36px;
+}
+
+nav .logo h1 {
+    color: #DA70D6;
+}
+
+nav .nav-li {
+    margin: auto;
+    justify-content: center;
+
+}
+nav .nav-li ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px ;    
+}
+
+nav .nav-li ul li{
+    padding: 20px;
+}
+
+nav .nav-li ul li a.active{
+    text-decoration: solid 1px;
+    color: #DA70D6;
+}
+
+nav .nav-li ul li a{
+    text-decoration: none;
+    color: black;
+}
+  
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+.input-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-group input {
+    padding: 12px;
+    outline: none;
+    border-radius: 25px;
+    border: 1px solid lightgray;
+    width: 80%;
+}
+
+.input-group-btn {
+    margin-left: -34px;
+    padding-bottom: 4px;
+}
+
+.btn {
+    border: none;
+    background: none;
+}
+
+
+
+.btnLogSign {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.btnLogSign button {
+    background-color: #DA70D6;
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+.btnLogSign button a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* finish navbar style */
+
+/* start main style */
+
+main {
+    height: auto;
+}
+
+.carts-container {
+    width: 85%;
+    margin: auto;
+    height: auto;
+    margin-top: 100px;
+}
+
+/* finish main style */
+
+/* start footer style */
+
+.footer {
+    width: 100%;
+    font-weight: normal;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    margin-top: 100px;
+}
+
+.footer-container {
+    background-color: #f0f0f0;
+    width: 85%;
+    margin: auto;
+}
+
+.infomation {
+
+    background-color: #F0F0F0;
+    margin-bottom: 2rem;
+    padding: 0 2rem; 
+
+}
+
+.infomation img {
+    width: 55px;
+    height: 80px;
+    margin-left: 20px;
+    margin-right: 1rem; 
+}
+
+.infomation h1 {
+    font-size: 1.5rem;
+    color: #DA70D6;
+    text-decoration: none;
+    margin: 0; 
+}
+
+.infomation button { 
+font-size: 1rem;
+border-radius: 8px;
+background: #000000;
+color: #ffffff;
+border: none;
+cursor: pointer;
+transition: background 0.3s ease;
+}
+
+.infomation button a {
+    color: white;
+    text-decoration: none;
+}
+
+.infomation button:hover {
+background: #444; 
+}
+
+
+.footer-container {
+    margin-left: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    margin-left: 64px;
+    flex: 1;
+    min-width: 100px;
+    margin: 1rem;
+    background-color: #F0F0F0;
+}
+
+.long-section {
+    min-width: 300px;
+
+}
+
+.footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #000000;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.75rem;
+    color: #000000;
+
+}
+
+.footer-section ul li a {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #007bff;
+}
+
+.footer-section p {
+    color: #000000;
+    margin: 0.5rem 0;
+} 
+
+/* finish footer style */ 
+
