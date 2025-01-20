@@ -147,9 +147,11 @@ nav .nav-li ul li a{
 
 main {
     height: auto;
+    
 }
 
 .carts-container {
+    background: red;    /* pany____________________________________________________________________________________________________ */
     width: 85%;
     margin: auto;
     height: auto;
@@ -273,4 +275,3 @@ background: #444;
 } 
 
 /* finish footer style */ 
-

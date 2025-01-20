@@ -1,0 +1,580 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    margin: auto;
+    font-family: "Inria Sans", serif;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+/* start navbar style */
+nav {
+    background-color: #F0F0F0;
+    padding-bottom: 20px;
+}
+.nav-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F0F0F0;
+}
+
+a.active {
+    text-decoration: underline #DA70D6;
+    color: #DA70D6;
+}
+
+nav .logo img {
+    margin-left: 36px;
+}
+
+nav .logo h1 {
+    color: #DA70D6;
+}
+
+nav .nav-li {
+    margin: auto;
+    justify-content: center;
+    /* background-color: #70da9a; */
+}
+nav .nav-li ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px ;    
+}
+
+nav .nav-li ul li{
+    padding: 20px;
+}
+
+nav .nav-li ul li a.active{
+    text-decoration: solid 1px;
+    color: #DA70D6;
+}
+
+nav .nav-li ul li a{
+    text-decoration: none;
+    color: black;
+}
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #f1f1f1}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+.input-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-group input {
+    padding: 12px;
+    outline: none;
+    border-radius: 25px;
+    border: 1px solid lightgray;
+    width: 80%;
+}
+
+.input-group-btn {
+    margin-left: -34px;
+    padding-bottom: 4px;
+}
+
+.btn {
+    border: none;
+    background: none;
+}
+
+
+
+.btnLogSign {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.btnLogSign button {
+    background-color: #DA70D6;
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+.btnLogSign button a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* finish navbar style */
+/* part 1 css title page*/
+#title_page{
+     
+    background: #FFF5FF;
+    height: 400px;
+    justify-items: center;
+    
+}
+#title_page h2{
+    font-size: 4rem;
+    position: relative;
+    top: 70px;
+}
+.line1{
+
+    margin-top: 100px;
+    border: 2px outset black;
+    width: 70%;
+    border-radius: 10px;
+}
+#title_page p{
+    font-size: 1rem;
+    text-align: center;
+    /* background: #DA70D6; */
+    position: relative;
+    top: 10px;
+}
+/* Part2 */
+
+.countan_us{
+    
+   
+   
+    display: flex;
+    justify-content:  space-around ;
+    gap: 100px;
+
+}
+.picture img{
+    width: 80%;
+}
+.informationcontact1{
+    width: 40%;
+    margin-bottom: 134px;
+    margin-left : 200px; 
+}
+.line2{
+    border-bottom: 2px solid black;
+    position: relative;
+    top: 74px;
+    width: 100%;
+
+}
+.countan_us{
+    margin-top: 84px;
+}
+/* map */
+/* part3 */
+.locattion{
+    margin-top: 10px;
+}
+.location_form{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+
+
+.map{
+    width: 90%;
+}
+.map_location iframe{
+    
+    position: relative;
+    margin-left: 90px;
+    width: 91%;
+    top: 4px;
+    height: 310px;
+    border-radius: 7px 0px 0px 7px;
+}
+.map_information{
+    position: relative;
+    background: gainsboro;
+    width: 30%;
+    margin-right: 90px;
+    height: 310px;
+    border-radius: 0px 7px 7px 0px;
+}
+#mps p{
+    font-size: 1rem;
+    color: #00000086;
+    position: relative;
+    left: 10px;
+
+}
+.locattion .ourtitle{
+    position: relative;
+     display:flex;
+     margin-left: 90px;
+}
+.lineup{
+    margin-top: 40px;
+    position: relative;
+    bottom: 20px;
+}
+.linedown{
+    position: relative;
+    top: 30px;
+}
+.line{
+    border-bottom: 2px solid black;
+    width: 80%;
+
+}
+/* part4___________________________________________________ */
+.all_card{
+    width: 24%;
+    height: 70vh;
+    box-shadow: rgba(0, 0, 0, 0.375) 0px 5px 15px;
+    border-radius: 20px;
+    background: #FFF5FF;
+
+}
+.form p{
+    font-size: 1.5rem;
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+.form img{
+    position: relative;
+    left: 90px;
+    top: 20px;
+     
+}
+
+
+/* at home */
+.cards_form{
+    margin-top: 52px;
+    display: flex;
+    justify-content: space-between;
+}
+#profile_card{
+    border-radius: 180px;
+    width: 200px;
+    position: relative;
+    top: 83px;
+    left: 63px;
+}
+.contact_profile{
+    margin-top: 90px;
+}
+.cards_form{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* part5____________________________________________ */
+.group_sellers{
+    margin-top: 230px;
+    font-size: 2rem;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+}
+.img_contact{
+    position: relative;
+    top: 20px;
+    padding: 18px;
+    width: 18px;
+    border-radius: 180px;
+     
+}
+#twiter{
+
+    background-image: url(https://i.pinimg.com/736x/36/f5/96/36f59636a226287b3d560fe2706103ed.jpg);
+    background-size: cover;
+    
+}
+#linkedin{
+    
+     
+    background-image: url(https://i.pinimg.com/736x/97/eb/6f/97eb6fe2bcc343598efdc15c9dd6f409.jpg);
+    background-size: cover;
+}
+#instargram{
+     
+    background-image: url(https://i.pinimg.com/736x/5b/8b/9c/5b8b9c0d8b8dbc20c53eed722860f42e.jpg);
+    background-size: cover;
+}
+#facebook{
+     
+    background-image: url(https://i.pinimg.com/736x/34/db/1d/34db1d53bc784b3b94fb3db1d5eac275.jpg);
+    background-size: cover;
+}
+#facebook:hover{
+    transform: scale(1.05);
+
+} 
+#linked:hover{
+    transform: scale(1.05);
+} 
+#instagram:hover{
+    transform: scale(1.05);
+
+} 
+#twitter:hover{
+    transform: scale(1.05);
+
+}
+
+/* _________________________________________________________________________  */
+.imagecontact_seller{
+    display: flex;
+    gap: 14px;
+    position: relative;
+    left: 40px;
+}
+.informationsellers{
+    position: relative;
+    left: 20px;
+}
+.pro_file{
+    display: flex;
+}
+.pro_file img{
+    border-radius: 180px;
+    width: 100px;
+    height: 100px;
+    position: relative;
+
+}
+.all_sellers{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;   
+    width: 27%;
+    height: 200px;
+    border-radius: 10px;
+}
+.oursellers{
+    text-align: center;
+    position: relative;
+    top: 14px;
+}
+/*  */
+.all_oursellers{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center; 
+    gap: 20px;
+
+}
+.pro_file img {
+    position: relative;
+    text-align: center;
+    justify-items: center;
+    left: 20px;
+    top: 9px;
+  
+}
+.pro_file  h4{
+    position: relative;
+    left: 38px;
+    font-size: 1rem;
+    top: 20px;
+}
+.ourcards h5{
+    font-size: 1rem;
+}
+/*  */
+
+/* ____________________________________________________________________ */
+
+/* <!-- part6____________________________________________________  */
+.info_cards{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 20px;
+    width: 30%;
+    border-radius: 24px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+
+}
+.image{
+
+    display: flex;
+  justify-items: center;
+  align-items: center;
+}
+.image h5{
+    position: relative;
+    left: 40px;
+    top: 10px;
+}
+.info_cards h4{
+    font-size: 1rem;
+    text-align: center;
+}
+.contact_card3{
+    display: flex;
+    margin-top: 120px;
+    justify-content: center;
+    gap: 18px;
+}
+.info_cards:hover{
+    transform: scale(1.05);
+}
+/* footer {
+    background: #f0f0f0;
+    font-weight: normal;
+    width: 85%;
+    margin: auto;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+} */
+
+.footer {
+    width: 100%;
+    font-weight: normal;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    margin-top: 100px;
+}
+
+.footer-container {
+    background-color: #f0f0f0;
+    width: 85%;
+    margin: auto;
+}
+
+.infomation {
+    /* Adds spacing between elements */
+    background-color: #F0F0F0;
+    margin-bottom: 2rem;
+    padding: 0 2rem; /* Optional padding for better spacing */
+}
+
+.infomation img {
+    width: 55px;
+    height: 80px;
+    margin-left: 20px;
+    margin-right: 1rem; /* Adds space between image and text */
+}
+
+.infomation h1 {
+    font-size: 1.5rem;
+    color: #DA70D6;
+    text-decoration: none;
+    margin: 0; /* Removes default margin for alignment */
+}
+
+.infomation button { 
+font-size: 1rem;
+border-radius: 8px;
+background: #000000;
+color: #ffffff;
+border: none;
+padding: 12px;/* Pushes the button to the far right */
+cursor: pointer;
+transition: background 0.3s ease;
+}
+
+.infomation button a {
+    color: white;
+    text-decoration: none;
+}
+
+.infomation button:hover {
+background: #444; /* Optional hover effect for the button */
+}
+
+
+.footer-container {
+    margin-left: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    margin-left: 64px;
+    flex: 1;
+    min-width: 100px;
+    margin: 1rem;
+    background-color: #F0F0F0;
+}
+
+.long-section {
+    min-width: 300px;
+
+}
+
+.footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #000000;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.75rem;
+    color: #000000;
+
+}
+
+.footer-section ul li a {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #007bff;
+}
+
+.footer-section p {
+    color: #000000;
+    margin: 0.5rem 0;
+}
+
+/* finish footer style */ 
