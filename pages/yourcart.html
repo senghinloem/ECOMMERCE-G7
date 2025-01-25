@@ -53,11 +53,57 @@
 
     <main>
         <div class="carts-container">
-            <h3>My bag </h3>
+            <h3  style="margin-top: 260px;">My bag </h3>
             <div class="carts">
-                <div class="no-carts">
+                <div  style="margin-top: -1px;" class="no-carts">
                     <h4>You have no items in your shopping cart.</h4>
                 </div>
+                <div class="cart-items" id="cart-items"></div> <!-- This should be present -->
+                
+                <div class="master-container">
+                    <div class="card checkout">
+                        <label class="title">Checkout</label>
+                        <div class="details">
+                            <span>Your cart subtotal:</span>
+                            <span>0.00$</span>
+                            <span>Discount through applied coupons:</span>
+                            <span>0.00$</span>
+                            <span>Shipping fees:</span>
+                            <span>0.00$</span>
+                        </div>
+                        <div class="checkout--footer">
+                            <label class="price"><sup>$</sup>0.00</label>
+                            <button class="checkout-btn">Checkout</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="checkout-form-container" id="checkout-form" style="display: none;">
+                    <div class="checkout-form">
+                        <h2>Checkout</h2>
+                        <form id="payment-form">
+                            <label for="name">Name on Card:</label>
+                            <input type="text" id="name" required>
+                            
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" required>
+                            
+                            <label for="card-number">Card Number:</label>
+                            <input type="text" id="card-number" maxlength="16" required>
+                            
+                            <label for="expiry">Expiry Date (MM/YY):</label>
+                            <input type="text" id="expiry" maxlength="5" placeholder="MM/YY" required>
+                            
+                            <label for="cvv">CVV:</label>
+                            <input type="text" id="cvv" maxlength="3" required>
+                            
+                            <button type="submit">Pay Now</button>
+                        </form>
+                        <button id="cancel-checkout">Cancel</button>
+                    </div>
+                </div>
+                
+
             </div>
             <a href="products.html">Click here for shopping.</a>
         </div>
@@ -109,6 +155,7 @@
             </div>
         </div>
     </footer> 
-    <script src="../JS/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="../JS/yourcart.js"></script>
 </body>
 </html>

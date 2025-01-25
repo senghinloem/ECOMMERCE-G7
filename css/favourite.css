@@ -279,3 +279,122 @@ background: #444;
 
 /* finish footer style */ 
 
+/* Main Container */
+.favourites-container {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 900px;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Empty State */
+.no-favourites {
+    margin: 20px 0;
+}
+
+.shop-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.shop-link:hover {
+    background-color: #0056b3;
+}
+
+/* Favorite Items Layout */
+.favorite-items-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* Individual Favorite Item */
+.favorite-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.favorite-item:hover {
+    transform: translateY(-2px);
+}
+
+/* Product Image */
+.favorite-image {
+    width: 120px;
+    height: 160px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Product Details */
+.favorite-details {
+    flex: 1;
+    margin-left: 15px;
+    text-align: left;
+}
+
+.product-name {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.product-price {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Buttons Container */
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Add to Cart Button */
+.add-to-cart {
+    padding: 8px 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.add-to-cart:hover {
+    background-color: #218838;
+}
+
+/* Remove Favorite Button */
+.remove-favorite {
+    padding: 8px 16px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.remove-favorite:hover {
+    background-color: #a71d2a;
+}
