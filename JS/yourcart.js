@@ -37,13 +37,16 @@ document.addEventListener('DOMContentLoaded', () => {
         let subtotal = 0;
 
         cart.forEach((item, index) => {
+            const price = parseFloat(item.price); // Ensure price is a number
+            console.log(`Displaying Item: ${item.name}, Price: ${price}`); // Debug log
+
             const itemElement = document.createElement('div');
             itemElement.innerHTML = `
                 <div style="display: flex; align-items: center; margin-bottom: 20px;">
                     <img src="${item.image}" alt="${item.name}" style="width: 220px; height: 330px; object-fit: cover; margin-right: 20px; border: 1px solid #ddd;" />
                     <div>
                         <h4 style="margin: 0;">${item.name}</h4>
-                        <p style="margin: 5px 0;">Price: USD ${item.price}</p>
+                        <p style="margin: 5px 0;">Price: USD ${isNaN(price) ? 'Invalid Price' : price.toFixed(2)}</p> <!-- Handle NaN -->
                         <p style="margin: 5px 0;">Quantity: 
                             <input type="number" value="${item.quantity}" min="1" data-index="${index}" class="quantity" style="width: 42px; outline: none; border: none; font-size:18px;" />
                         </p>
@@ -52,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 </div>
             `;
             cartItemsContainer.appendChild(itemElement);
-            subtotal += parseFloat(item.price) * parseInt(item.quantity);
+            subtotal += isNaN(price) ? 0 : price * parseInt(item.quantity); // Avoid NaN in subtotal
         });
 
         // Calculate Discount and Shipping based on Subtotal
@@ -160,5 +163,5 @@ document.addEventListener('DOMContentLoaded', () => {
         updateCartDisplay();
     });
 
-    updateCartDisplay();
+    updateCartDisplay(); // Initial display of the cart
 });

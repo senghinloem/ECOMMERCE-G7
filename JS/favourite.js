@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                 <p class="product-price">${item.price}</p>
                                 <div class="buttons">
                                     <button class="remove-favorite">Remove</button>
-                                    <button class="add-to-cart">Add to Cart</button>
+                                    <button class="add-to-cart" data-name="${item.name}" data-price="${item.price}" data-id="${item.id}" data-image="${item.image}">Add to Cart</button>
                                 </div>
                             </div>
                         </div>
@@ -60,10 +60,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const addToCart = (index) => {
         const cart = JSON.parse(localStorage.getItem('cart')) || [];
         const item = favorites[index];
-
+        
+        // Parse the price to remove any currency symbols or extra characters and convert it to a float
+        let price = parseFloat(item.price.replace(/[^0-9.-]+/g, "")); 
+    
+        // If parsing fails (price is NaN), set it to a default value (e.g., 0)
+        if (isNaN(price)) {
+            price = 0; // or handle it accordingly
+            alert("Invalid price detected for " + item.name);
+        }
+    
         // Check if the item already exists in the cart
-        const existingItemIndex = cart.findIndex(cartItem => cartItem.name === item.name);
-
+        const existingItemIndex = cart.findIndex(cartItem => cartItem.id === item.id);
+    
         if (existingItemIndex !== -1) {
             // If item exists, increase quantity
             cart[existingItemIndex].quantity += 1;
@@ -71,37 +80,20 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             // Otherwise, add item with quantity 1
             item.quantity = 1;
+            item.price = price; // Store the parsed price
             cart.push(item);
             alert(`${item.name} has been added to your cart!`);
         }
-
+    
         // Save the updated cart back to localStorage
         localStorage.setItem('cart', JSON.stringify(cart));
-
-        // Optionally refresh the cart display (e.g., if you're showing the cart on another page)
-        updateCartDisplay();
     };
+    
 
-    // Optional: Function to update the cart display (for visual feedback)
-    const updateCartDisplay = () => {
-        const cart = JSON.parse(localStorage.getItem('cart')) || [];
-        const cartItemsContainer = document.getElementById('cart-items');
-        
-        cartItemsContainer.innerHTML = '';
-        cart.forEach(item => {
-            const itemElement = document.createElement('div');
-            itemElement.innerHTML = `
-                <div style="display: flex; align-items: center; margin-bottom: 20px;">
-                    <img src="${item.image}" alt="${item.name}" style="width: 220px; height: 330px; object-fit: cover; margin-right: 20px; border: 1px solid #ddd;" />
-                    <div>
-                        <h4 style="margin: 0;">${item.name}</h4>
-                        <p style="margin: 5px 0;">Price: USD ${item.price}</p>
-                        <p style="margin: 5px 0;">Quantity: ${item.quantity}</p>
-                    </div>
-                </div>
-            `;
-            cartItemsContainer.appendChild(itemElement);
-        });
+    // Function to update totals in yourcart.js
+    const updateCartTotals = () => {
+        if (typeof window.updateCartDisplay === 'function') {
+            window.updateCartDisplay();
+        }
     };
-
 });
