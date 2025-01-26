@@ -2178,3 +2178,50 @@ background: #444; /* Optional hover effect for the button */
 .favorited {
     color: red !important;
 }
+
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+
+
+
+    .container {
+        gap: 30px; /* Increase spacing for tablets */
+    }
+
+    .product {
+        flex: 1 1 calc(48% - 20px); /* Two products per row */
+    }
+
+    .product h2 {
+        font-size: 18px; /* Adjust font size */
+    }
+
+    .product button {
+        padding: 12px 20px; /* Slightly larger buttons */
+    }
+}
+
+/* Desktop (1024px and above): Three columns */
+@media (min-width: 1024px) {
+    .container {
+        gap: 40px; /* Wider gap for desktop */
+    }
+
+    .product {
+        flex: 1 1 calc(33.33% - 20px); /* Three products per row */
+    }
+
+    .product h2 {
+        font-size: 20px; /* Larger font size */
+    }
+
+    .product button {
+        padding: 14px 24px; /* Bigger buttons for desktop */
+    }
+}
+
