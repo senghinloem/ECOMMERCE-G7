@@ -2174,5 +2174,7 @@ background: #444; /* Optional hover effect for the button */
 
 /* finish footer style */ 
 
-
-
+/* To make the heart icon red when it's favorited */
+.favorited {
+    color: red !important;
+}
