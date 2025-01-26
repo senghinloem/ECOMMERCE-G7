@@ -19,6 +19,10 @@ body {
 nav {
     background-color: #F0F0F0;
     padding-bottom: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 .nav-container {
     width: 90%;
@@ -157,6 +161,120 @@ main {
     margin-top: 100px;
 }
 
+.carts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* From Uiverse.io by zanina-yassine */ 
+.master-container {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 5px;
+    display: none;
+  }
+  
+  .card {
+    width: 500px;
+    height: 30vh;
+    background: #FFFFFF;
+    box-shadow: 0px 187px 75px rgba(0, 0, 0, 0.01), 0px 105px 63px rgba(0, 0, 0, 0.05), 0px 47px 47px rgba(0, 0, 0, 0.09), 0px 12px 26px rgba(0, 0, 0, 0.1), 0px 0px 0px rgba(0, 0, 0, 0.1);
+ 
+  }
+  
+  .title {
+    width: 100%;
+    height: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    border-bottom: 1px solid #efeff3;
+    font-weight: 700;
+    font-size: 11px;
+    color: #63656b;
+  }
+  
+  /* Checkout */
+  .checkout {
+    border-radius: 9px 9px 19px 19px;
+  }
+  
+  .checkout .details {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 10px;
+    gap: 24px;
+    font-size: 48px;
+  }
+  
+  .checkout .details span {
+    font-size: 13px;
+    font-weight: 600;
+  }
+  
+  .checkout .details span:nth-child(odd) {
+    font-size: 11px;
+    font-weight: 700;
+    color: #707175;
+    margin: auto auto auto 0;
+  }
+  
+  .checkout .details span:nth-child(even) {
+    font-size: 13px;
+    font-weight: 600;
+    color: #47484b;
+    margin: auto 0 auto auto;
+  }
+  
+  .checkout .checkout--footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px 10px 20px;
+    background-color: #efeff3;
+  }
+  
+  .price {
+    position: relative;
+    font-size: 22px;
+    color: #2B2B2F;
+    font-weight: 900;
+  }
+  
+  .price sup {
+    font-size: 13px;
+  }
+  
+  .price sub {
+    width: fit-content;
+    position: absolute;
+    font-size: 11px;
+    color: #5F5D6B;
+    bottom: 5px;
+    display: inline-block;
+  }
+
+
+  .checkout .checkout-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 36px;
+    background: linear-gradient(180deg, #4480FF 0%, #115DFC 50%, #0550ED 100%);
+    box-shadow: 0px 0.5px 0.5px #EFEFEF, 0px 1px 0.5px rgba(239, 239, 239, 0.5);
+    border-radius: 7px;
+    border: 0;
+    outline: none;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+  }
+
 /* finish main style */
 
 /* start footer style */
@@ -274,3 +392,92 @@ background: #444;
 } 
 
 /* finish footer style */ 
+
+.checkout-form-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.checkout-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.checkout-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+}
+
+.checkout-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #555;
+}
+
+.checkout-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+}
+
+.checkout-form input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.checkout-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.checkout-form button:hover {
+    background-color: #218838;
+}
+
+#cancel-checkout {
+    margin-top: 15px;
+    width: 100%;
+    padding: 12px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#cancel-checkout:hover {
+    background-color: #c82333;
+}

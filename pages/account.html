@@ -4,8 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Account</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+          integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/account.css"> <!-- Link to your CSS file -->
 </head>
 <body>
+    <!-- Navbar -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="../images/Logo.png" alt="logo">
+                <h1>Walkbag</h1>
+            </div>
+            <div class="nav-li">
+                <ul>
+                    <li><a   href="../index.html">HOME</a></li>
+                    <li class="dropdown"><a href="pages/products.html">PRODUCTS</a>
+                        <div >
+                            <div class="dropdown-content">
+                              <a href="products.html">All</a>
+                              <a href="shoes.html">Shoes</a>
+                              <a href="bags.html">Bags</a>
+                              <a href="favourite.html">Favourites</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="yourcart.html">YOUR CARD</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li class="active"><a class="active" href="contact.html">CONTACT US</a></li>
+                    <li><a href="account.html">ACCOUNT</a></li>
+                </ul>   
+                <form>
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Search">
+                      <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                      </div>
+                    </div>
+                </form>
+            </div>
+            <div class="btnLogSign">
+                <button> <a href="login.html">Log in</a></button>
+                <button> <a href="signup.html">Sign up</a></button>
+            </div>
+        </div>
+    </nav>
     
+    <!-- Profile User Section -->
+    <div class="profile_user">
+        <!-- Background Section -->
+        <div class="bg">
+            <button id="selectBackground">Select Background</button>
+            <input type="file" accept="image/*" id="fileBackground" style="display: none;">
+        </div>
+        
+        <!-- Profile Picture Section -->
+        <div class="change-picture">
+            <input type="file" accept="image/*" id="profileInput" style="display: none;">
+            <button id="selectProfileImage">
+                <i class="fa-regular fa-image"></i> Select Profile Image
+            </button>
+        </div>
+        
+        <!-- User Name Section -->
+        <div class="name">
+            <h1 class="name_user">Enter your name</h1>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../JS/profileuser.js"></script> <!-- Link to your JavaScript file -->
 </body>
 </html>
